@@ -11,7 +11,7 @@ import SwiftUI
 struct GrizzcoHandbookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            tabView()
         }
     }
 }

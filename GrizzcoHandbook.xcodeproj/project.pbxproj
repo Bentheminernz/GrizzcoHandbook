@@ -11,7 +11,57 @@
 		25A155312C54BEAC0034EAC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155302C54BEAC0034EAC4 /* ContentView.swift */; };
 		25A155332C54BEAD0034EAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A155322C54BEAD0034EAC4 /* Assets.xcassets */; };
 		25A155362C54BEAD0034EAC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A155352C54BEAD0034EAC4 /* Preview Assets.xcassets */; };
+		25A1553E2C54BEE40034EAC4 /* FieldGuide.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A1553D2C54BEE40034EAC4 /* FieldGuide.json */; };
+		25A155402C54BEFF0034EAC4 /* handbook.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A1553F2C54BEFF0034EAC4 /* handbook.json */; };
+		25A155422C54BF150034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155412C54BF150034EAC4 /* StageFetch.swift */; };
+		25A155442C54BF290034EAC4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155432C54BF290034EAC4 /* Model.swift */; };
+		25A155462C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */; };
+		25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155472C54BF4D0034EAC4 /* CountdownView.swift */; };
+		25A1554A2C54BF5C0034EAC4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155492C54BF5C0034EAC4 /* Data.swift */; };
+		25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1554C2C54BF810034EAC4 /* StageView.swift */; };
+		25A1554F2C54BF920034EAC4 /* EggstraWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */; };
+		25A155522C54BFB80034EAC4 /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25A155512C54BFB80034EAC4 /* WhatsNewKit */; };
+		25A155542C54BFC90034EAC4 /* FieldGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155532C54BFC90034EAC4 /* FieldGuide.swift */; };
+		25A155562C54BFD80034EAC4 /* SalmonRunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */; };
+		25A155582C54BFE80034EAC4 /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155572C54BFE80034EAC4 /* tabView.swift */; };
+		25A1555C2C54C0020034EAC4 /* SalmonRunRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */; };
+		25A1555E2C54C0110034EAC4 /* GrizzcoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */; };
+		25A155602C54C01C0034EAC4 /* GrizzcoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */; };
+		25A155682C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155672C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift */; };
+		25A1556A2C54C27D0034EAC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155692C54C27D0034EAC4 /* ContentView.swift */; };
+		25A1556C2C54C27F0034EAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A1556B2C54C27F0034EAC4 /* Assets.xcassets */; };
+		25A1556F2C54C27F0034EAC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A1556E2C54C27F0034EAC4 /* Preview Assets.xcassets */; };
+		25A155722C54C27F0034EAC4 /* GrizzcoHandbookWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25A155652C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25A155782C54C2E50034EAC4 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155772C54C2E50034EAC4 /* CountdownView.swift */; };
+		25A1557A2C54C2F10034EAC4 /* BossView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155792C54C2F10034EAC4 /* BossView.swift */; };
+		25A1557D2C54C31F0034EAC4 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557C2C54C31F0034EAC4 /* TabView.swift */; };
+		25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557E2C54C3300034EAC4 /* WeaponView.swift */; };
+		25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155802C54C3670034EAC4 /* StageFetch.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25A155702C54C27F0034EAC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25A155232C54BEAC0034EAC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25A155642C54C27D0034EAC4;
+			remoteInfo = "GrizzcoHandbookWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25A155762C54C27F0034EAC4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				25A155722C54C27F0034EAC4 /* GrizzcoHandbookWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizzcoHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +69,43 @@
 		25A155302C54BEAC0034EAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25A155322C54BEAD0034EAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25A155352C54BEAD0034EAC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25A1553D2C54BEE40034EAC4 /* FieldGuide.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FieldGuide.json; sourceTree = "<group>"; };
+		25A1553F2C54BEFF0034EAC4 /* handbook.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = handbook.json; sourceTree = "<group>"; };
+		25A155412C54BF150034EAC4 /* StageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFetch.swift; sourceTree = "<group>"; };
+		25A155432C54BF290034EAC4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerRepresentable.swift; sourceTree = "<group>"; };
+		25A155472C54BF4D0034EAC4 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		25A155492C54BF5C0034EAC4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		25A1554C2C54BF810034EAC4 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggstraWorkView.swift; sourceTree = "<group>"; };
+		25A155532C54BFC90034EAC4 /* FieldGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldGuide.swift; sourceTree = "<group>"; };
+		25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRunListView.swift; sourceTree = "<group>"; };
+		25A155572C54BFE80034EAC4 /* tabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabView.swift; sourceTree = "<group>"; };
+		25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRunRow.swift; sourceTree = "<group>"; };
+		25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzcoDetail.swift; sourceTree = "<group>"; };
+		25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzcoRow.swift; sourceTree = "<group>"; };
+		25A155652C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GrizzcoHandbookWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A155672C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzcoHandbookWatchApp.swift; sourceTree = "<group>"; };
+		25A155692C54C27D0034EAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25A1556B2C54C27F0034EAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25A1556E2C54C27F0034EAC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25A155772C54C2E50034EAC4 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
+		25A155792C54C2F10034EAC4 /* BossView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossView.swift; sourceTree = "<group>"; };
+		25A1557C2C54C31F0034EAC4 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		25A1557E2C54C3300034EAC4 /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
+		25A155802C54C3670034EAC4 /* StageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFetch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		25A155282C54BEAC0034EAC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A155522C54BFB80034EAC4 /* WhatsNewKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A155622C54C27D0034EAC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				25A1552D2C54BEAC0034EAC4 /* GrizzcoHandbook */,
+				25A155662C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App */,
 				25A1552C2C54BEAC0034EAC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */,
+				25A155652C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +136,9 @@
 		25A1552D2C54BEAC0034EAC4 /* GrizzcoHandbook */ = {
 			isa = PBXGroup;
 			children = (
+				25A1554B2C54BF780034EAC4 /* Views */,
 				25A1552E2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift */,
-				25A155302C54BEAC0034EAC4 /* ContentView.swift */,
+				25A1553C2C54BECE0034EAC4 /* Helpers */,
 				25A155322C54BEAD0034EAC4 /* Assets.xcassets */,
 				25A155342C54BEAD0034EAC4 /* Preview Content */,
 			);
@@ -67,6 +153,60 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		25A1553C2C54BECE0034EAC4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				25A1553D2C54BEE40034EAC4 /* FieldGuide.json */,
+				25A1553F2C54BEFF0034EAC4 /* handbook.json */,
+				25A155412C54BF150034EAC4 /* StageFetch.swift */,
+				25A155432C54BF290034EAC4 /* Model.swift */,
+				25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */,
+				25A155472C54BF4D0034EAC4 /* CountdownView.swift */,
+				25A155492C54BF5C0034EAC4 /* Data.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25A1554B2C54BF780034EAC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */,
+				25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */,
+				25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */,
+				25A155302C54BEAC0034EAC4 /* ContentView.swift */,
+				25A1554C2C54BF810034EAC4 /* StageView.swift */,
+				25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */,
+				25A155532C54BFC90034EAC4 /* FieldGuide.swift */,
+				25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */,
+				25A155572C54BFE80034EAC4 /* tabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25A155662C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				25A155672C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift */,
+				25A155692C54C27D0034EAC4 /* ContentView.swift */,
+				25A1556B2C54C27F0034EAC4 /* Assets.xcassets */,
+				25A1556D2C54C27F0034EAC4 /* Preview Content */,
+				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
+				25A155792C54C2F10034EAC4 /* BossView.swift */,
+				25A1557C2C54C31F0034EAC4 /* TabView.swift */,
+				25A1557E2C54C3300034EAC4 /* WeaponView.swift */,
+				25A155802C54C3670034EAC4 /* StageFetch.swift */,
+			);
+			path = "GrizzcoHandbookWatch Watch App";
+			sourceTree = "<group>";
+		};
+		25A1556D2C54C27F0034EAC4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				25A1556E2C54C27F0034EAC4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,14 +217,36 @@
 				25A155272C54BEAC0034EAC4 /* Sources */,
 				25A155282C54BEAC0034EAC4 /* Frameworks */,
 				25A155292C54BEAC0034EAC4 /* Resources */,
+				25A155762C54C27F0034EAC4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25A155712C54C27F0034EAC4 /* PBXTargetDependency */,
+			);
+			name = GrizzcoHandbook;
+			packageProductDependencies = (
+				25A155512C54BFB80034EAC4 /* WhatsNewKit */,
+			);
+			productName = GrizzcoHandbook;
+			productReference = 25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25A155642C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A155732C54C27F0034EAC4 /* Build configuration list for PBXNativeTarget "GrizzcoHandbookWatch Watch App" */;
+			buildPhases = (
+				25A155612C54C27D0034EAC4 /* Sources */,
+				25A155622C54C27D0034EAC4 /* Frameworks */,
+				25A155632C54C27D0034EAC4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GrizzcoHandbook;
-			productName = GrizzcoHandbook;
-			productReference = 25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */;
+			name = "GrizzcoHandbookWatch Watch App";
+			productName = "GrizzcoHandbookWatch Watch App";
+			productReference = 25A155652C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +262,9 @@
 					25A1552A2C54BEAC0034EAC4 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					25A155642C54C27D0034EAC4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 25A155262C54BEAC0034EAC4 /* Build configuration list for PBXProject "GrizzcoHandbook" */;
@@ -111,11 +276,15 @@
 				Base,
 			);
 			mainGroup = 25A155222C54BEAC0034EAC4;
+			packageReferences = (
+				25A155502C54BFB80034EAC4 /* XCRemoteSwiftPackageReference "WhatsNewKit" */,
+			);
 			productRefGroup = 25A1552C2C54BEAC0034EAC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				25A1552A2C54BEAC0034EAC4 /* GrizzcoHandbook */,
+				25A155642C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +294,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A1553E2C54BEE40034EAC4 /* FieldGuide.json in Resources */,
 				25A155362C54BEAD0034EAC4 /* Preview Assets.xcassets in Resources */,
 				25A155332C54BEAD0034EAC4 /* Assets.xcassets in Resources */,
+				25A155402C54BEFF0034EAC4 /* handbook.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A155632C54C27D0034EAC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A1556F2C54C27F0034EAC4 /* Preview Assets.xcassets in Resources */,
+				25A1556C2C54C27F0034EAC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +317,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A155562C54BFD80034EAC4 /* SalmonRunListView.swift in Sources */,
+				25A1554A2C54BF5C0034EAC4 /* Data.swift in Sources */,
+				25A155542C54BFC90034EAC4 /* FieldGuide.swift in Sources */,
+				25A1555E2C54C0110034EAC4 /* GrizzcoDetail.swift in Sources */,
+				25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */,
+				25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */,
+				25A155462C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift in Sources */,
+				25A1555C2C54C0020034EAC4 /* SalmonRunRow.swift in Sources */,
+				25A155582C54BFE80034EAC4 /* tabView.swift in Sources */,
 				25A155312C54BEAC0034EAC4 /* ContentView.swift in Sources */,
 				25A1552F2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift in Sources */,
+				25A155422C54BF150034EAC4 /* StageFetch.swift in Sources */,
+				25A155602C54C01C0034EAC4 /* GrizzcoRow.swift in Sources */,
+				25A155442C54BF290034EAC4 /* Model.swift in Sources */,
+				25A1554F2C54BF920034EAC4 /* EggstraWorkView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25A155612C54C27D0034EAC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A1557D2C54C31F0034EAC4 /* TabView.swift in Sources */,
+				25A155782C54C2E50034EAC4 /* CountdownView.swift in Sources */,
+				25A1556A2C54C27D0034EAC4 /* ContentView.swift in Sources */,
+				25A155682C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift in Sources */,
+				25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */,
+				25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */,
+				25A1557A2C54C2F10034EAC4 /* BossView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25A155712C54C27F0034EAC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25A155642C54C27D0034EAC4 /* GrizzcoHandbookWatch Watch App */;
+			targetProxy = 25A155702C54C27F0034EAC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		25A155372C54BEAD0034EAC4 /* Debug */ = {
@@ -267,6 +482,7 @@
 		25A1553A2C54BEAD0034EAC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,6 +513,7 @@
 		25A1553B2C54BEAD0034EAC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,6 +538,66 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25A155742C54C27F0034EAC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbookWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TD3JXVDW7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GrizzcoHandbookWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.benlawrence.GrizzcoHandbook;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		25A155752C54C27F0034EAC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbookWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4TD3JXVDW7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GrizzcoHandbookWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.benlawrence.GrizzcoHandbook;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -343,7 +622,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		25A155732C54C27F0034EAC4 /* Build configuration list for PBXNativeTarget "GrizzcoHandbookWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25A155742C54C27F0034EAC4 /* Debug */,
+				25A155752C54C27F0034EAC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25A155502C54BFB80034EAC4 /* XCRemoteSwiftPackageReference "WhatsNewKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/WhatsNewKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25A155512C54BFB80034EAC4 /* WhatsNewKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25A155502C54BFB80034EAC4 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;
+			productName = WhatsNewKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25A155232C54BEAC0034EAC4 /* Project object */;
 }
