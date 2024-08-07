@@ -22,7 +22,6 @@
 		25A1554A2C54BF5C0034EAC4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155492C54BF5C0034EAC4 /* Data.swift */; };
 		25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1554C2C54BF810034EAC4 /* StageView.swift */; };
 		25A1554F2C54BF920034EAC4 /* EggstraWorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */; };
-		25A155522C54BFB80034EAC4 /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25A155512C54BFB80034EAC4 /* WhatsNewKit */; };
 		25A155542C54BFC90034EAC4 /* FieldGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155532C54BFC90034EAC4 /* FieldGuide.swift */; };
 		25A155562C54BFD80034EAC4 /* SalmonRunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */; };
 		25A155582C54BFE80034EAC4 /* tabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155572C54BFE80034EAC4 /* tabView.swift */; };
@@ -40,6 +39,7 @@
 		25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557E2C54C3300034EAC4 /* WeaponView.swift */; };
 		25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155802C54C3670034EAC4 /* StageFetch.swift */; };
 		25AF6A252C5B82F000ADD8C3 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF6A242C5B82F000ADD8C3 /* test.swift */; };
+		25D420EB2C62FEE400B3556A /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25D420EA2C62FEE400B3556A /* WhatsNewKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A155522C54BFB80034EAC4 /* WhatsNewKit in Frameworks */,
+				25D420EB2C62FEE400B3556A /* WhatsNewKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 			);
 			name = GrizzcoHandbook;
 			packageProductDependencies = (
-				25A155512C54BFB80034EAC4 /* WhatsNewKit */,
+				25D420EA2C62FEE400B3556A /* WhatsNewKit */,
 			);
 			productName = GrizzcoHandbook;
 			productReference = 25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */;
@@ -254,6 +254,8 @@
 			dependencies = (
 			);
 			name = "GrizzcoHandbookWatch Watch App";
+			packageProductDependencies = (
+			);
 			productName = "GrizzcoHandbookWatch Watch App";
 			productReference = 25A155652C54C27D0034EAC4 /* Grizzco Handbook.app */;
 			productType = "com.apple.product-type.application";
@@ -503,6 +505,7 @@
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Grizzco;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -534,6 +537,7 @@
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Grizzco;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -655,7 +659,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		25A155512C54BFB80034EAC4 /* WhatsNewKit */ = {
+		25D420EA2C62FEE400B3556A /* WhatsNewKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 25A155502C54BFB80034EAC4 /* XCRemoteSwiftPackageReference "WhatsNewKit" */;
 			productName = WhatsNewKit;
