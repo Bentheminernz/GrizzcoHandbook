@@ -17,7 +17,6 @@
 		25A155402C54BEFF0034EAC4 /* handbook.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A1553F2C54BEFF0034EAC4 /* handbook.json */; };
 		25A155422C54BF150034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155412C54BF150034EAC4 /* StageFetch.swift */; };
 		25A155442C54BF290034EAC4 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155432C54BF290034EAC4 /* Model.swift */; };
-		25A155462C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */; };
 		25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155472C54BF4D0034EAC4 /* CountdownView.swift */; };
 		25A1554A2C54BF5C0034EAC4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155492C54BF5C0034EAC4 /* Data.swift */; };
 		25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1554C2C54BF810034EAC4 /* StageView.swift */; };
@@ -38,7 +37,6 @@
 		25A1557D2C54C31F0034EAC4 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557C2C54C31F0034EAC4 /* TabView.swift */; };
 		25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557E2C54C3300034EAC4 /* WeaponView.swift */; };
 		25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155802C54C3670034EAC4 /* StageFetch.swift */; };
-		25AF6A252C5B82F000ADD8C3 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF6A242C5B82F000ADD8C3 /* test.swift */; };
 		25D420EB2C62FEE400B3556A /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25D420EA2C62FEE400B3556A /* WhatsNewKit */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +76,6 @@
 		25A1553F2C54BEFF0034EAC4 /* handbook.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = handbook.json; sourceTree = "<group>"; };
 		25A155412C54BF150034EAC4 /* StageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFetch.swift; sourceTree = "<group>"; };
 		25A155432C54BF290034EAC4 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerRepresentable.swift; sourceTree = "<group>"; };
 		25A155472C54BF4D0034EAC4 /* CountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownView.swift; sourceTree = "<group>"; };
 		25A155492C54BF5C0034EAC4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		25A1554C2C54BF810034EAC4 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
@@ -99,7 +96,6 @@
 		25A1557C2C54C31F0034EAC4 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		25A1557E2C54C3300034EAC4 /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
 		25A155802C54C3670034EAC4 /* StageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFetch.swift; sourceTree = "<group>"; };
-		25AF6A242C5B82F000ADD8C3 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +143,6 @@
 				25A1553C2C54BECE0034EAC4 /* Helpers */,
 				25A155322C54BEAD0034EAC4 /* Assets.xcassets */,
 				25A155342C54BEAD0034EAC4 /* Preview Content */,
-				25AF6A242C5B82F000ADD8C3 /* test.swift */,
 			);
 			path = GrizzcoHandbook;
 			sourceTree = "<group>";
@@ -169,7 +164,6 @@
 				25A1553F2C54BEFF0034EAC4 /* handbook.json */,
 				25A155412C54BF150034EAC4 /* StageFetch.swift */,
 				25A155432C54BF290034EAC4 /* Model.swift */,
-				25A155452C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift */,
 				25A155472C54BF4D0034EAC4 /* CountdownView.swift */,
 				25A155492C54BF5C0034EAC4 /* Data.swift */,
 			);
@@ -335,9 +329,7 @@
 				25A155542C54BFC90034EAC4 /* FieldGuide.swift in Sources */,
 				25A1555E2C54C0110034EAC4 /* GrizzcoDetail.swift in Sources */,
 				25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */,
-				25AF6A252C5B82F000ADD8C3 /* test.swift in Sources */,
 				25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */,
-				25A155462C54BF3D0034EAC4 /* TabBarControllerRepresentable.swift in Sources */,
 				25A1555C2C54C0020034EAC4 /* SalmonRunRow.swift in Sources */,
 				25A155582C54BFE80034EAC4 /* tabView.swift in Sources */,
 				25A155312C54BEAC0034EAC4 /* ContentView.swift in Sources */,

@@ -134,7 +134,7 @@
                 "id": "2.2.10",
                 "displayedID": "2.2.10",
                 "name": "Slammin' Lid",
-                "description": "Basic Information It's a pilot riding on a hovering, saucer-shaped craft. These provide support for other Salmonids by creating a circular force field that ink cannot pass through. Attack Behavior: Lesser Salmonids will be deployed from the hole on the bottom of the saucer. It will try to squash targets who walk into the force field. Elimination: There is a pilot stationed on top of the craft. Defeating the pilot will destroy the craft. Walk into the barrier under the Slammin' Lid, then quickly dodge when the craft drops down to splat you. Once it's down, that's yoyr chance to get on top and attack the pilot. Supporting Information: The cutting-edge technology incorporated into the craft was obtained by trading with Octarians. Because of the high cost to build these, only highly experienced veterans are allowed to pilot them. To save on weight, the craft has no weapons. This is why it attacks by trying to smash enemies beneath it.",
+                "description": "Basic Information: It's a pilot riding on a hovering, saucer-shaped craft. These provide support for other Salmonids by creating a circular force field that ink cannot pass through. Attack Behavior: Lesser Salmonids will be deployed from the hole on the bottom of the saucer. It will try to squash targets who walk into the force field. Elimination: There is a pilot stationed on top of the craft. Defeating the pilot will destroy the craft. Walk into the barrier under the Slammin' Lid, then quickly dodge when the craft drops down to splat you. Once it's down, that's yoyr chance to get on top and attack the pilot. Supporting Information: The cutting-edge technology incorporated into the craft was obtained by trading with Octarians. Because of the high cost to build these, only highly experienced veterans are allowed to pilot them. To save on weight, the craft has no weapons. This is why it attacks by trying to smash enemies beneath it.",
                 "image": "Slamminlid",
                 "imageCaption": "Slammin' Lid",
                 "icon": "SlamminLidIcon",
@@ -254,6 +254,56 @@
                 "image": "GiantTornado",
                 "imageCaption": "Tornados and Golden Egg chests",
                 "icon": "GiantTornadoIcon",
+                "sponsored": "False",
+                "sponsoredDescription": "nil"
+            }
+        ]
+    },
+    {
+        "id": "KingSalmonids",
+        "name": "King Salmonids",
+        "items": [
+            {
+                "id": "2.4.1",
+                "displayedID": "2.4.1",
+                "name": "Cohozuna",
+                "description": "Basic Information: Cohozuna is a King Salmonid of extraordinary size and strength, far larger than any other Salmonid encountered. Its bulky body is covered in thick scales, providing significant protection against ink-based attacks. Attack Behavior: Cohozuna has two primary attacks: it can leap into the air and slam down, creating a powerful shockwave that can instantly splat any Inkling caught directly underneath and deal substantial damage to those nearby. It can also perform a body slam by falling forward, crushing enemies in its path. Elimination: Defeating Cohozuna requires a coordinated team effort. While shooting ink at Cohozuna will deal damage, the most effective method is using Golden Eggs fired from egg cannons, which deal significant damage. Despite its sluggish movement, Cohozuna has immense health, so continuous attacks with main weapons and Golden Eggs are essential to defeat it within the time limit. Supporting Information: Cohozuna is an elite leader among Salmonids, recognized by its distinctive red and gray scales, chains around its neck, and menacing mohawk. Its health is known to fluctuate, so make sure you never slack off! Always give it your A Game! Cohozuna’s presence can disrupt the battlefield by blocking access to Golden Eggs and trapping workers. Its predictable but deadly attacks require vigilance and teamwork to bring it down. Successfully damaging Cohozuna rewards you with fish scales, a valulable resource used to purchase cool gear and accessories.",
+                "image": "Cohozuna",
+                "imageCaption": "Cohozuna",
+                "icon": "CohozunaIcon",
+                "sponsored": "False",
+                "sponsoredDescription": "nil"
+            },
+            {
+                "id": "2.4.2",
+                "displayedID": "2.4.2",
+                "name": "Horrorboros",
+                "description": "Basic Information: Horrorboros is a large, dragon-like King Salmonid with distinct yellow eyes, crooked teeth, and a bomb device similar to Steelheads. It has a serpentine body with rows of lights and wires attached to its head. Attack Behavior: Horrorboros floats around the map, charging a Booyah Bomb-like blast in its mouth. You can attack this bomb until it bursts, dealing substantial damage to Horrorboros and canceling its attack. Elimination: Employees should focus on attacking the bomb in Horrorboros’ mouth, as bursting it deals massive damage. Golden Eggs and main weapons should target the bomb for efficiency. Continuous pressure is vital due to its large health pool. Supporting Information: Horrorboros’ size and floating nature make it vulnerable to attacks from anywhere on the map. Utilizing its bomb is crucial for a swift defeat. You must work together, using special weapons and Golden Eggs strategically to maximize damage and overcome this formidable foe.",
+                "image": "Horrorboros",
+                "imageCaption": "Horrorboros",
+                "icon": "HorrorborosIcon",
+                "sponsored": "False",
+                "sponsoredDescription": "nil"
+            },
+            {
+                "id": "2.4.3",
+                "displayedID": "2.4.3",
+                "name": "Megalodontia",
+                "description": "Basic Information: Megalodontia is an enormous King Salmonid, large enough to swallow a ship whole. It has white bulging eyes, blue hair, and a jaw contraption resembling braces. Its back features various nets and a large red bump with bandages. Attack Behavior: Megalodontia submerges and targets a random worker, marked by a large circle. After a short time, it emerges, swallowing anything in the circle, including other Salmonids, who drop Golden Eggs upon death. Elimination: To defeat Megalodontia, you must attack the large bump on its back, which takes extra damage. Coordinated attacks with main weapons and Golden Eggs are essential due to its immense health. Positioning near the weak point before each attack is crucial. Supporting Information: Megalodontia is an elite leader among Salmonids, known for its colossal size and destructive power. Its attacks can clear out other Salmonids, providing strategic advantages. Workers need to stay alert and use its predictable attack patterns to their benefit while focusing on its weak point for maximum damage.",
+                "image": "Megalodontia",
+                "imageCaption": "Megalodontia",
+                "icon": "MegalodontiaIcon",
+                "sponsored": "False",
+                "sponsoredDescription": "nil"
+            },
+            {
+                "id": "2.4.4",
+                "displayedID": "2.4.4",
+                "name": "Triumvirate",
+                "description": "Basic Information: The Triumvirate is a high-stakes boss encounter where the formidable trio of King Salmonids—Cohozuna, Megalodontia, and Horrorboros—assault together. Each King Salmonid appears separately on the battlefield, and all must be taken down to complete the wave. This encounter challenges you to manage and defeat multiple powerful enemies simultaneously. Attack Behavior: Each King Salmonid will engage in its usual attack patterns, but their combined presence makes the battle particularly chaotic. Megalodontia’s massive size and attacks can impact the other King Salmonids, while Horrorboros’ explosive devices affect nearby enemies. Coordinating your efforts is crucial to handle their diverse threats. Elimination: To overcome the Triumvirate, focus on using your available weapons and specials to deal substantial damage to each King Salmonid. Managing their attacks and leveraging the opportunities created by their interactions will be key to clearing this intense challenge. Supporting Information: The Triumvirate showcases the synergy of King Salmonids working together in a coordinated assault. Each King Salmonid brings its unique abilities and attacks to the fray, requiring strategic planning and teamwork. Efficient use of rare weapons and special charges is essential for overcoming this formidable group of adversaries.",
+                "image": "Triumvirate",
+                "imageCaption": "Triumvirate",
+                "icon": "TriumvirateIcon",
                 "sponsored": "False",
                 "sponsoredDescription": "nil"
             }
