@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct GrizzcoHandbookWatch_Watch_AppApp: App {
+struct GrizzcoHandbookWatchApp: App {
     var body: some Scene {
         WindowGroup {
             MainTabView()

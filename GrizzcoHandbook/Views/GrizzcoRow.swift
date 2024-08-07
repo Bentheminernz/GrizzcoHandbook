@@ -11,28 +11,53 @@ struct GrizzcoRow: View {
     var item: Item
     
     var body: some View {
-        HStack {
-            if item.icon == "nil" {
-                EmptyView()
-            } else {
-                Image(item.icon)
-                    .resizable()
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
-                    .frame(width: 50, height: 50)
+        if item.sponsored == "True" {
+            HStack {
+                if item.icon == "nil" {
+                    EmptyView()
+                } else {
+                    Image(item.icon)
+                        .resizable()
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                        .frame(width: 50, height: 50)
+                }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(item.name)
+                        Spacer()
+                        Text("Sponsored")
+                            .font(.caption)
+                    }
+                    Text(item.sponsoredDescription)
+                        .font(.caption)
+                }
+                Spacer()
             }
-            VStack(alignment: .leading) {
-                Text(item.id)
-                    .font(.headline)
-                Text(item.name)
+        } else if item.sponsored == "False" {
+            HStack {
+                if item.icon == "nil" {
+                    EmptyView()
+                } else {
+                    Image(item.icon)
+                        .resizable()
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                        .frame(width: 50, height: 50)
+                }
+                VStack(alignment: .leading) {
+                    Text(item.displayedID)
+                        .font(.headline)
+                    Text(item.name)
+                }
+                Spacer()
             }
-            Spacer()
         }
     }
 }
 
 #if DEBUG
 #Preview {
-    GrizzcoRow(item: Item.example1)
+    GrizzcoRow(item: Item.example3)
 }
 #endif

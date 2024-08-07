@@ -9,13 +9,27 @@ import SwiftUI
 
 struct FieldGuide: View {
     @Environment(\.colorScheme) var colorScheme
-    let items = Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
     
     @State private var searchText = ""
+    @State private var sponsorTest = true
+    
+    var items: [ItemSection] {
+        if sponsorTest {
+            return Bundle.main.decode([ItemSection].self, from: "FieldGuideSponsorTest.json")
+        } else {
+            return Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
+        }
+    }
 
     var body: some View {
         NavigationStack {
             List {
+                Toggle("Use Sponsor Test", isOn: $sponsorTest)
+                    .listRowBackground(Color.white.opacity(0.1))
+                if sponsorTest {
+                    Text("Hello World!")
+                        .listRowBackground(Color.white.opacity(0.1))
+                }
                 ForEach(filteredItems) { section in
                     Section(section.name) {
                         ForEach(section.items) { item in

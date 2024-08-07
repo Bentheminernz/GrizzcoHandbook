@@ -9,7 +9,7 @@ import SwiftUI
 import WhatsNewKit
 
 struct ContentView: View {
-    let items = Bundle.main.decode([ItemSection].self, from: "handbook.json")
+    let items = Bundle.main.decode([ItemSection].self, from: "handbookSponsorTest.json")
     @Environment(\.colorScheme) var colorScheme
 
     // UserDefaults key for tracking first launch
