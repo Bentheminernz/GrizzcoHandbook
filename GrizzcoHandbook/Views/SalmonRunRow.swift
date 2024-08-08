@@ -58,8 +58,9 @@ struct SalmonRunRow: View {
                     ForEach(setting.weapons, id: \.name) { weapon in
                         if let weaponURL = URL(string: weapon.image.url) {
                             AsyncImage(url: weaponURL) { image in
-                                image.resizable()
-                                     .scaledToFit()
+                                image
+                                    .resizable()
+                                    .scaledToFit()
                             } placeholder: {
                                 Color.gray
                             }

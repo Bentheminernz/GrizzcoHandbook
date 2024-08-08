@@ -48,16 +48,7 @@ struct ContentView: View {
                     #endif
                 }
                 .scrollContentBackground(.hidden)
-                .background(colorScheme == .dark ? LinearGradient(gradient: Gradient(stops: [
-                    Gradient.Stop(color: Color(hue: 0.0963, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.1156),
-                    Gradient.Stop(color: Color(hue: 0.0963, saturation: 0.6989, brightness: 1.0, opacity: 1.0), location: 0.2864),
-                    Gradient.Stop(color: Color(hue: 0.15, saturation: 0.0, brightness: 0.0, opacity: 1.0), location: 1.0),
-                    Gradient.Stop(color: Color(hue: 0.5523, saturation: 1.0, brightness: 1.0, opacity: 0.0), location: 1.0)
-                ]), startPoint: .top, endPoint: .bottom) : LinearGradient(gradient: Gradient(stops: [
-                    Gradient.Stop(color: Color(hue: 0.0971, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.0),
-                    Gradient.Stop(color: Color(hue: 0.0965, saturation: 0.4965, brightness: 0.9569, opacity: 1.0), location: 0.3506),
-                    Gradient.Stop(color: Color(hue: 0.0973, saturation: 0.4518, brightness: 1.0, opacity: 1.0), location: 1.0)
-                ]), startPoint: .top, endPoint: .bottom))
+                .background(BackgroundGradient(colorScheme: colorScheme).customBackground)
                 .navigationTitle("Employee Handbook")
                 .navigationDestination(for: Item.self) { item in
                     GrizzcoDetail(item: item)
