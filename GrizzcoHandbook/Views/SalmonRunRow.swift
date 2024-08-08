@@ -45,12 +45,13 @@ struct SalmonRunRow: View {
                         .font(.subheadline)
                         .lineLimit(1) // Ensure the text doesn't wrap
                         .minimumScaleFactor(0.5) // Scale down the text if needed
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 
                 Text(setting.coopStage.name)
-                    .font(.headline)
+                    .font(.subheadline)
                     .lineLimit(1)
-                    .fixedSize(horizontal: false, vertical: true)
+                    .fixedSize(horizontal: true, vertical: true)
                     .minimumScaleFactor(0.5)
                 
                 HStack(spacing: 8) {
@@ -75,9 +76,14 @@ struct SalmonRunRow: View {
             
             Spacer()
             
-            bossImageView(for: setting.boss)
-                .frame(width: 60, height: 60)
-                .clipShape(RoundedRectangle(cornerRadius: 8))
+            if let boss = setting.boss {
+                let bossItem = getItemForBoss(bossName: boss.name)
+                NavigationLink(destination: GrizzcoDetail(item: bossItem)) {
+                    bossImageView(for: boss)
+                        .frame(width: 50, height: 50)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+            }
         }
     }
     
@@ -95,6 +101,21 @@ struct SalmonRunRow: View {
         }
         
         return dateTimeString
+    }
+    
+    private func getItemForBoss(bossName: String) -> Item {
+        switch bossName {
+        case "Horrorboros":
+            return Item.horrorborosInfo
+        case "Cohozuna":
+            return Item.cohozunaInfo
+        case "Megalodontia":
+            return Item.megalodontiaInfo
+        case "Triumvirate":
+            return Item.triumvirateInfo
+        default:
+            return Item(id: UUID().uuidString, displayedID: "N/A", name: bossName, description: "Description for \(bossName)", image: "nil", imageCaption: "Caption for \(bossName)", icon: "nil", sponsored: "False", sponsoredDescription: "nil")
+        }
     }
     
     @ViewBuilder
