@@ -9,17 +9,9 @@ import SwiftUI
 
 struct FieldGuide: View {
     @Environment(\.colorScheme) var colorScheme
+    let items = Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
     
     @State private var searchText = ""
-    @State private var sponsorTest = false
-    
-    var items: [ItemSection] {
-        if sponsorTest {
-            return Bundle.main.decode([ItemSection].self, from: "FieldGuideSponsorTest.json")
-        } else {
-            return Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
-        }
-    }
 
     var body: some View {
         NavigationStack {
@@ -34,12 +26,6 @@ struct FieldGuide: View {
                     }
                 }
                 .listRowBackground(Color.white.opacity(0.1))
-                #if DEBUG
-                Section("Debug Tools") {
-                    Toggle("Use Sponsor Test", isOn: $sponsorTest)
-                        .listRowBackground(Color.white.opacity(0.1))
-                }
-                #endif
             }
             .scrollContentBackground(.hidden)
             .background(

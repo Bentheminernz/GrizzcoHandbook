@@ -9,15 +9,7 @@ import SwiftUI
 import WhatsNewKit
 
 struct ContentView: View {
-    @State private var sponsorTest = false
-    
-    var items: [ItemSection] {
-        if sponsorTest {
-            return Bundle.main.decode([ItemSection].self, from: "handbookSponsorTest.json")
-        } else {
-            return Bundle.main.decode([ItemSection].self, from: "handbook.json")
-        }
-    }
+    let items = Bundle.main.decode([ItemSection].self, from: "handbook.json")
     @Environment(\.colorScheme) var colorScheme
 
     // UserDefaults key for tracking first launch
@@ -40,12 +32,6 @@ struct ContentView: View {
                         }
                     }
                     .listRowBackground(Color.white.opacity(0.1))
-                    #if DEBUG
-                    Section("Debug Tools") {
-                        Toggle("Use Sponsor Test", isOn: $sponsorTest)
-                            .listRowBackground(Color.white.opacity(0.1))
-                    }
-                    #endif
                 }
                 .scrollContentBackground(.hidden)
                 .background(colorScheme == .dark ? LinearGradient(gradient: Gradient(stops: [

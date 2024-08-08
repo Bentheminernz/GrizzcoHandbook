@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "25A155642C54C27D0034EAC4"
-               BuildableName = "Grizzco Handbook.app"
+               BuildableName = "GrizzcoHandbookWatch Watch App.app"
                BlueprintName = "GrizzcoHandbookWatch Watch App"
                ReferencedContainer = "container:GrizzcoHandbook.xcodeproj">
             </BuildableReference>
@@ -59,7 +59,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25A155642C54C27D0034EAC4"
-            BuildableName = "Grizzco Handbook.app"
+            BuildableName = "GrizzcoHandbookWatch Watch App.app"
             BlueprintName = "GrizzcoHandbookWatch Watch App"
             ReferencedContainer = "container:GrizzcoHandbook.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "25A155642C54C27D0034EAC4"
-            BuildableName = "Grizzco Handbook.app"
+            BuildableName = "GrizzcoHandbookWatch Watch App.app"
             BlueprintName = "GrizzcoHandbookWatch Watch App"
             ReferencedContainer = "container:GrizzcoHandbook.xcodeproj">
          </BuildableReference>
