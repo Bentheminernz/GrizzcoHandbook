@@ -11,6 +11,8 @@ struct StageView: View {
     @ObservedObject var stageFetcher = StageFetcher()
     @Environment(\.colorScheme) var colorScheme
     @State private var countdown: String = ""
+    @State private var showingPopup = false
+    @State private var selectedWeapon: String?
 
     var body: some View {
         NavigationStack {
@@ -46,13 +48,33 @@ struct StageView: View {
                             HStack(spacing: 20) {
                                 ForEach(setting.weapons, id: \.name) { weapon in
                                     VStack {
-                                        AsyncImage(url: URL(string: weapon.image.url)) { image in
-                                            image
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: UIScreen.main.bounds.width * 0.2)
-                                        } placeholder: {
-                                            ProgressView()
+                                        ZStack {
+                                            AsyncImage(url: URL(string: weapon.image.url)) { image in
+                                                image
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: UIScreen.main.bounds.width * 0.2)
+                                                    .onTapGesture {
+                                                        withAnimation {
+                                                            selectedWeapon = (selectedWeapon == weapon.name) ? nil : weapon.name
+                                                        }
+                                                    }
+                                            } placeholder: {
+                                                ProgressView()
+                                            }
+                                            
+                                            if selectedWeapon == weapon.name {
+                                                Text(weapon.name)
+                                                    .padding(10)
+                                                    .background(Color.black.opacity(0.8))
+                                                    .foregroundColor(.white)
+                                                    .cornerRadius(10)
+                                                    .offset(y: -75) // Position the popup above the image
+                                                    .transition(.scale)
+                                                    .lineLimit(nil) // Allow text to wrap to multiple lines
+                                                    .multilineTextAlignment(.center) // Center align the text
+                                                    .fixedSize(horizontal: false, vertical: true) // Ensure the text view resizes vertically
+                                            }
                                         }
                                     }
                                 }
@@ -72,25 +94,33 @@ struct StageView: View {
 
                                 VStack {
                                     if boss.name == "Horrorboros" {
-                                        Image("HorrorborosRotateIcon")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        NavigationLink(destination: GrizzcoDetail(item: Item.horrorborosInfo)) {
+                                            Image("HorrorborosRotateIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        }
                                     } else if boss.name == "Cohozuna" {
-                                        Image("CohozunaRotateIcon")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        NavigationLink(destination: GrizzcoDetail(item: Item.cohozunaInfo)) {
+                                            Image("CohozunaRotateIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        }
                                     } else if boss.name == "Megalodontia" {
-                                        Image("MegalodontiaRotateIcon")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        NavigationLink(destination: GrizzcoDetail(item: Item.megalodontiaInfo)) {
+                                            Image("MegalodontiaRotateIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        }
                                     } else if boss.name == "Triumvirate" {
-                                        Image("TriumvirateRotateIcon")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        NavigationLink(destination: GrizzcoDetail(item: Item.triumvirateInfo)) {
+                                            Image("TriumvirateRotateIcon")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: UIScreen.main.bounds.width * 0.3)
+                                        }
                                     } else if let imageURL = boss.image?.url {
                                         AsyncImage(url: URL(string: imageURL)) { image in
                                             image
