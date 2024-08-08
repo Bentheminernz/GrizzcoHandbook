@@ -58,6 +58,6 @@ struct GrizzcoRow: View {
 
 #if DEBUG
 #Preview {
-    GrizzcoRow(item: Item.example3)
+    GrizzcoRow(item: Item.example2)
 }
 #endif
