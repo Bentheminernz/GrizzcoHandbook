@@ -9,9 +9,11 @@ import SwiftUI
 
 struct FieldGuide: View {
     @Environment(\.colorScheme) var colorScheme
-    
     @State private var searchText = ""
     @State private var sponsorTest = false
+    @State private var selectedSection: String? = nil
+    private let lastVersionKey = "lastVersionKey"
+    @State private var showWhatsNewSheet = false
     
     var items: [ItemSection] {
         if sponsorTest {
@@ -21,6 +23,30 @@ struct FieldGuide: View {
         }
     }
 
+    var filteredItems: [ItemSection] {
+        let filteredSections: [ItemSection]
+
+        if let selectedSection = selectedSection {
+            filteredSections = items.filter { $0.name == selectedSection }
+        } else {
+            filteredSections = items
+        }
+
+        if searchText.isEmpty {
+            return filteredSections
+        } else {
+            return filteredSections.map { section in
+                ItemSection(
+                    id: section.id,
+                    name: section.name,
+                    items: section.items.filter { item in
+                        item.name.localizedCaseInsensitiveContains(searchText)
+                    }
+                )
+            }.filter { !$0.items.isEmpty }
+        }
+    }
+    
     var body: some View {
         NavigationStack {
             List {
@@ -48,22 +74,43 @@ struct FieldGuide: View {
                 GrizzcoDetail(item: item)
             }
             .searchable(text: $searchText)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Menu {
+                        Button(action: { selectedSection = nil }) {
+                            Label("Show All", systemImage: selectedSection == nil ? "checkmark.circle" : "")
+                        }
+                        ForEach(items, id: \.name) { section in
+                            Button(action: { selectedSection = section.name }) {
+                                Label(section.name, systemImage: selectedSection == section.name ? "checkmark.circle" : "")
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showWhatsNewSheet) {
+            WhatsNewSheet()
+        }
+        .onAppear {
+            checkForNewVersion()
         }
     }
-    
-    var filteredItems: [ItemSection] {
-        if searchText.isEmpty {
-            return items
-        } else {
-            return items.map { section in
-                ItemSection(
-                    id: section.id,
-                    name: section.name,
-                    items: section.items.filter { item in
-                        item.name.localizedCaseInsensitiveContains(searchText)
-                    }
-                )
-            }.filter { !$0.items.isEmpty }
+
+    // Function to check for a new app version
+    func checkForNewVersion() {
+        // Get the current app version
+        let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
+
+        // Get the last version stored in UserDefaults
+        let lastVersion = UserDefaults.standard.string(forKey: lastVersionKey)
+
+        // Compare versions, if different show the "What's New" sheet
+        if lastVersion == nil || currentVersion != lastVersion {
+            showWhatsNewSheet = true
+            UserDefaults.standard.set(currentVersion, forKey: lastVersionKey)
         }
     }
 }

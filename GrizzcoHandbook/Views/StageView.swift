@@ -48,34 +48,36 @@ struct StageView: View {
                             HStack(spacing: 20) {
                                 ForEach(setting.weapons, id: \.name) { weapon in
                                     VStack {
-                                        ZStack {
-                                            AsyncImage(url: URL(string: weapon.image.url)) { image in
-                                                image
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: UIScreen.main.bounds.width * 0.2)
-                                                    .onTapGesture {
-                                                        withAnimation {
-                                                            selectedWeapon = (selectedWeapon == weapon.name) ? nil : weapon.name
-                                                        }
+                                        AsyncImage(url: URL(string: weapon.image.url)) { image in
+                                            image
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: UIScreen.main.bounds.width * 0.2)
+                                                .onTapGesture {
+                                                    withAnimation {
+                                                        selectedWeapon = (selectedWeapon == weapon.name) ? nil : weapon.name
                                                     }
-                                            } placeholder: {
-                                                ProgressView()
-                                            }
-                                            
-                                            if selectedWeapon == weapon.name {
-                                                Text(weapon.name)
-                                                    .padding(10)
-                                                    .background(Color.black.opacity(0.8))
-                                                    .foregroundColor(.white)
-                                                    .cornerRadius(10)
-                                                    .offset(y: -75) // Position the popup above the image
-                                                    .transition(.scale)
-                                                    .lineLimit(nil) // Allow text to wrap to multiple lines
-                                                    .multilineTextAlignment(.center) // Center align the text
-                                                    .fixedSize(horizontal: false, vertical: true) // Ensure the text view resizes vertically
-                                            }
+                                                }
+                                        } placeholder: {
+                                            ProgressView()
                                         }
+                                        .overlay(
+                                            Group {
+                                                if selectedWeapon == weapon.name {
+                                                    Text(weapon.name)
+                                                        .padding(10)
+                                                        .background(Color.black.opacity(0.8))
+                                                        .foregroundColor(.white)
+                                                        .cornerRadius(10)
+                                                        .offset(y: -75)
+                                                        .transition(.scale)
+                                                        .lineLimit(nil)
+                                                        .multilineTextAlignment(.center)
+                                                        .fixedSize(horizontal: false, vertical: true)
+                                                        .frame(width: 120)
+                                                }
+                                            }
+                                        )
                                     }
                                 }
                             }

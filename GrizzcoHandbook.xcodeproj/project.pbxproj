@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253168BC2C6618A600B65BC6 /* WhatsNewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */; };
 		254A30012C62188F0053A201 /* FieldGuideSponsorTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 254A2FFF2C62188F0053A201 /* FieldGuideSponsorTest.json */; };
 		254A30022C62188F0053A201 /* handbookSponsorTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 254A30002C62188F0053A201 /* handbookSponsorTest.json */; };
 		25A1552F2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1552E2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift */; };
-		25A155312C54BEAC0034EAC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155302C54BEAC0034EAC4 /* ContentView.swift */; };
+		25A155312C54BEAC0034EAC4 /* Handbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155302C54BEAC0034EAC4 /* Handbook.swift */; };
 		25A155332C54BEAD0034EAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A155322C54BEAD0034EAC4 /* Assets.xcassets */; };
 		25A155362C54BEAD0034EAC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A155352C54BEAD0034EAC4 /* Preview Assets.xcassets */; };
 		25A1553E2C54BEE40034EAC4 /* FieldGuide.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A1553D2C54BEE40034EAC4 /* FieldGuide.json */; };
@@ -65,11 +66,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewSheet.swift; sourceTree = "<group>"; };
 		254A2FFF2C62188F0053A201 /* FieldGuideSponsorTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FieldGuideSponsorTest.json; sourceTree = "<group>"; };
 		254A30002C62188F0053A201 /* handbookSponsorTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handbookSponsorTest.json; sourceTree = "<group>"; };
 		25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizzcoHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A1552E2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzcoHandbookApp.swift; sourceTree = "<group>"; };
-		25A155302C54BEAC0034EAC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25A155302C54BEAC0034EAC4 /* Handbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handbook.swift; sourceTree = "<group>"; };
 		25A155322C54BEAD0034EAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25A155352C54BEAD0034EAC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25A1553D2C54BEE40034EAC4 /* FieldGuide.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FieldGuide.json; sourceTree = "<group>"; };
@@ -176,7 +178,8 @@
 				25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */,
 				25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */,
 				25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */,
-				25A155302C54BEAC0034EAC4 /* ContentView.swift */,
+				25A155302C54BEAC0034EAC4 /* Handbook.swift */,
+				253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */,
 				25A1554C2C54BF810034EAC4 /* StageView.swift */,
 				25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */,
 				25A155532C54BFC90034EAC4 /* FieldGuide.swift */,
@@ -332,12 +335,13 @@
 				25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */,
 				25A1555C2C54C0020034EAC4 /* SalmonRunRow.swift in Sources */,
 				25A155582C54BFE80034EAC4 /* tabView.swift in Sources */,
-				25A155312C54BEAC0034EAC4 /* ContentView.swift in Sources */,
+				25A155312C54BEAC0034EAC4 /* Handbook.swift in Sources */,
 				25A1552F2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift in Sources */,
 				25A155422C54BF150034EAC4 /* StageFetch.swift in Sources */,
 				25A155602C54C01C0034EAC4 /* GrizzcoRow.swift in Sources */,
 				25A155442C54BF290034EAC4 /* Model.swift in Sources */,
 				25A1554F2C54BF920034EAC4 /* EggstraWorkView.swift in Sources */,
+				253168BC2C6618A600B65BC6 /* WhatsNewSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbook/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
@@ -524,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbook/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
