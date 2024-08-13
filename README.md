@@ -38,6 +38,7 @@ To run the app on a simulator or device, select Product -> Run from the menu bar
 	<li>Create a new branch `git checkout -b my-branch`</li>
 	<li>Make your changes</li>
 	<li>Submit a pull request</li>
+</ol>
 
 <h2>Credits</h2>
 <a href="https://splatoon3.ink">Splatoon3.ink</a> is used for fetching the current and upcoming Salmon Run stages
