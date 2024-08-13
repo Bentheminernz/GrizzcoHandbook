@@ -12,6 +12,10 @@ struct SalmonRunRow: View {
     var startTime: String?
     var endTime: String?
     @Binding var refreshTrigger: Bool
+    @State private var selectedBossItem: Item?
+    @State private var navigateToBossDetail: Bool = false
+    @State private var showingPopup = false
+    @State private var selectedWeapon: String?
     
     private var formattedStartTime: String {
         formatDateTime(startTime)
@@ -43,8 +47,8 @@ struct SalmonRunRow: View {
                 if let _ = startTime, let _ = endTime {
                     Text("\(formattedStartTime) - \(formattedEndTime)")
                         .font(.subheadline)
-                        .lineLimit(1) // Ensure the text doesn't wrap
-                        .minimumScaleFactor(0.5) // Scale down the text if needed
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 
@@ -57,15 +61,43 @@ struct SalmonRunRow: View {
                 HStack(spacing: 8) {
                     ForEach(setting.weapons, id: \.name) { weapon in
                         if let weaponURL = URL(string: weapon.image.url) {
-                            AsyncImage(url: weaponURL) { image in
-                                image
-                                    .resizable()
-                                    .scaledToFit()
-                            } placeholder: {
-                                Color.gray
+                            ZStack {
+                                AsyncImage(url: weaponURL) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .clipShape(Circle())
+                                        .frame(width: 40, height: 40)
+//                                        .onTapGesture {
+//                                            withAnimation {
+//                                                selectedWeapon = (selectedWeapon == weapon.name) ? nil : weapon.name
+//                                            }
+//                                        }
+                                } placeholder: {
+                                    Color.gray
+                                        .frame(width: 40, height: 40)
+                                        .clipShape(Circle())
+                                }
                             }
-                            .frame(width: 40, height: 40)
-                            .clipShape(Circle())
+//                            .overlay(
+//                                Group {
+//                                    if selectedWeapon == weapon.name {
+//                                        Text(weapon.name)
+//                                            .padding(10)
+//                                            .background(Color.black.opacity(0.8))
+//                                            .foregroundColor(.white)
+//                                            .cornerRadius(10)
+//                                            .offset(y: -40) // Adjust y-offset as needed
+//                                            .transition(.scale)
+//                                            .lineLimit(nil)
+//                                            .multilineTextAlignment(.center)
+//                                            .fixedSize(horizontal: false, vertical: true)
+//                                            .frame(width: 120)
+//                                            .alignmentGuide(.top) { $0[.bottom] } // Align the top of the text with the bottom of the circle to avoid shifting other elements
+//                                    }
+//                                }
+//                            )
+//                            .frame(width: 40, height: 40)
                         }
                     }
                 }
@@ -79,11 +111,22 @@ struct SalmonRunRow: View {
             
             if let boss = setting.boss {
                 let bossItem = getItemForBoss(bossName: boss.name)
-                NavigationLink(destination: GrizzcoDetail(item: bossItem)) {
+                Button(action: {
+                    selectedBossItem = bossItem
+                }) {
                     bossImageView(for: boss)
                         .frame(width: 50, height: 50)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
+                .buttonStyle(PlainButtonStyle()) // Ensures the button doesn't inherit any unwanted styles
+            }
+        }
+        .navigationDestination(isPresented: Binding<Bool>(
+            get: { selectedBossItem != nil },
+            set: { if !$0 { selectedBossItem = nil } }
+        )) {
+            if let bossItem = selectedBossItem {
+                GrizzcoDetail(item: bossItem)
             }
         }
     }
@@ -158,3 +201,11 @@ struct SalmonRunRow: View {
         }
     }
 }
+
+#if DEBUG
+#Preview {
+    NavigationStack {
+        SalmonRunRow(setting: SalmonRunSetting.example, startTime: "2024-09-16T08:00:00Z", endTime: "2024-09-16T12:00:00Z", refreshTrigger: .constant(false))
+    }
+}
+#endif

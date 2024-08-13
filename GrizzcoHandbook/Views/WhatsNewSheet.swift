@@ -10,11 +10,11 @@ import WhatsNewKit
 
 struct WhatsNewSheet: View {
     var body: some View {
-        whatsNewSheet()
+        whatsNewSheet() 
     }
 
     func whatsNewSheet() -> WhatsNewView {
-        var features = [
+        let features = [
             WhatsNew.Feature(
                 image: .init(systemName: "graduationcap.fill"),
                 title: "New Field Guide Information",
@@ -34,7 +34,10 @@ struct WhatsNewSheet: View {
                 image: .init(systemName: "filemenu.and.selection"),
                 title: "Reordered Tab Bar",
                 subtitle: "Reorders Tab Bar so Field Guide is now the default tab!"
-            )
+            ),
+            WhatsNew.Feature(image: .init(systemName: "internaldrive"),
+                             title: "Storage Reduced",
+                             subtitle: "App Size has been reduced by a whopping 70% smaller!")
         ]
         
         let whatsNew = WhatsNew(

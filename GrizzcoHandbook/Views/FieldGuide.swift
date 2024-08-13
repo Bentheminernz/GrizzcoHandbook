@@ -69,7 +69,7 @@ struct FieldGuide: View {
             }
             .scrollContentBackground(.hidden)
             .background(BackgroundGradient(colorScheme: colorScheme).customBackground)
-            .navigationTitle("Salmonid Field Guide")
+            .navigationTitle("Field Guide")
             .navigationDestination(for: Item.self) { item in
                 GrizzcoDetail(item: item)
             }
