@@ -1,6 +1,7 @@
+
 <h1 align="center">
   <br>
-  <a href="https://ryujinx.org/"><img src="https://raw.githubusercontent.com/Ryujinx/Ryujinx/master/distribution/misc/Logo.svg" alt="Ryujinx" width="150"></a>
+  <img src="https://raw.githubusercontent.com/Bentheminernz/GrizzcoHandbook/main/GrizzcoHandbook/Assets.xcassets/AppIcon.appiconset/1024.png?token=GHSAT0AAAAAACVEENVSOBZWHRVAF2KISBAQZV2W6PA" width="150">
   <br>
   <b>Grizzco Handbook</b>
 </h1>
