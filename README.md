@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/Bentheminernz/GrizzcoHandbook/readme/ReadMeIcon.png?token=GHSAT0AAAAAACVEENVTUGZDOWZP2XG7HVYUZV2XB4Q" width="150" style="border-radius: 23.4375px;">
+  <img src="https://github.com/Bentheminernz/GrizzcoHandbook/blob/readme/ReadMeIcon.png?raw=true" width="150" style="border-radius: 23.4375px;">
   <br>
   <b>Grizzco Handbook</b>
 </h1>
