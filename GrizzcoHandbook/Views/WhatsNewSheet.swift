@@ -31,13 +31,15 @@ struct WhatsNewSheet: View {
                 subtitle: "Click on King Salmonid icons to see info about them!"
             ),
             WhatsNew.Feature(
+                image: .init(systemName: "info.bubble"),
+                title: "Weapon Names",
+                subtitle: "Click on weapon icons to see their names!"
+            ),
+            WhatsNew.Feature(
                 image: .init(systemName: "filemenu.and.selection"),
                 title: "Reordered Tab Bar",
                 subtitle: "Reorders Tab Bar so Field Guide is now the default tab!"
-            ),
-            WhatsNew.Feature(image: .init(systemName: "internaldrive"),
-                             title: "Storage Reduced",
-                             subtitle: "App Size has been reduced by a whopping 70% smaller!")
+            )
         ]
         
         let whatsNew = WhatsNew(

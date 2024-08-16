@@ -26,9 +26,15 @@ struct MainTabView: View { // Renamed to avoid confusion with the system TabView
                     Text("Boss").foregroundColor(.white)
                 }
             CountdownView()
+                .font(.caption)
                 .containerBackground(Gradient(colors: [.orange, .black]), for: .tabView)
                 .navigationTitle {
                     Text("Next Map").foregroundColor(.white)
+                }
+            SalmonRunListView()
+                .containerBackground(Gradient(colors: [.orange, .black]), for: .tabView)
+                .navigationTitle {
+                    Text("Boss").foregroundColor(.white)
                 }
         }
         .tabViewStyle(.verticalPage) // Use the correct page tab view stylex

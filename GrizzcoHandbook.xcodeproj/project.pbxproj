@@ -38,6 +38,9 @@
 		25A1557D2C54C31F0034EAC4 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557C2C54C31F0034EAC4 /* TabView.swift */; };
 		25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1557E2C54C3300034EAC4 /* WeaponView.swift */; };
 		25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155802C54C3670034EAC4 /* StageFetch.swift */; };
+		25BABCD82C6F63460029CD31 /* SalmonRunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BABCD72C6F63460029CD31 /* SalmonRunListView.swift */; };
+		25BABCDA2C6F636C0029CD31 /* SalmonRunRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BABCD92C6F636C0029CD31 /* SalmonRunRow.swift */; };
+		25BABCDC2C6F65FE0029CD31 /* UpcomingCountdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BABCDB2C6F65FE0029CD31 /* UpcomingCountdown.swift */; };
 		25D420EB2C62FEE400B3556A /* WhatsNewKit in Frameworks */ = {isa = PBXBuildFile; productRef = 25D420EA2C62FEE400B3556A /* WhatsNewKit */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,9 @@
 		25A1557C2C54C31F0034EAC4 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		25A1557E2C54C3300034EAC4 /* WeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponView.swift; sourceTree = "<group>"; };
 		25A155802C54C3670034EAC4 /* StageFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageFetch.swift; sourceTree = "<group>"; };
+		25BABCD72C6F63460029CD31 /* SalmonRunListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRunListView.swift; sourceTree = "<group>"; };
+		25BABCD92C6F636C0029CD31 /* SalmonRunRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalmonRunRow.swift; sourceTree = "<group>"; };
+		25BABCDB2C6F65FE0029CD31 /* UpcomingCountdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCountdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,14 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				25A155672C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift */,
-				25A155692C54C27D0034EAC4 /* ContentView.swift */,
+				25BABCD62C6F630F0029CD31 /* Views */,
 				25A1556B2C54C27F0034EAC4 /* Assets.xcassets */,
 				25A1556D2C54C27F0034EAC4 /* Preview Content */,
-				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
-				25A155792C54C2F10034EAC4 /* BossView.swift */,
-				25A1557C2C54C31F0034EAC4 /* TabView.swift */,
-				25A1557E2C54C3300034EAC4 /* WeaponView.swift */,
-				25A155802C54C3670034EAC4 /* StageFetch.swift */,
+				25BABCD52C6F62FB0029CD31 /* Helpers */,
 			);
 			path = "GrizzcoHandbookWatch Watch App";
 			sourceTree = "<group>";
@@ -211,6 +213,29 @@
 				25A1556E2C54C27F0034EAC4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25BABCD52C6F62FB0029CD31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
+				25A155802C54C3670034EAC4 /* StageFetch.swift */,
+				25BABCDB2C6F65FE0029CD31 /* UpcomingCountdown.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25BABCD62C6F630F0029CD31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25A155692C54C27D0034EAC4 /* ContentView.swift */,
+				25A155792C54C2F10034EAC4 /* BossView.swift */,
+				25A1557C2C54C31F0034EAC4 /* TabView.swift */,
+				25A1557E2C54C3300034EAC4 /* WeaponView.swift */,
+				25BABCD72C6F63460029CD31 /* SalmonRunListView.swift */,
+				25BABCD92C6F636C0029CD31 /* SalmonRunRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,8 +375,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A1557D2C54C31F0034EAC4 /* TabView.swift in Sources */,
+				25BABCDA2C6F636C0029CD31 /* SalmonRunRow.swift in Sources */,
 				25A155782C54C2E50034EAC4 /* CountdownView.swift in Sources */,
 				25A1556A2C54C27D0034EAC4 /* ContentView.swift in Sources */,
+				25BABCD82C6F63460029CD31 /* SalmonRunListView.swift in Sources */,
+				25BABCDC2C6F65FE0029CD31 /* UpcomingCountdown.swift in Sources */,
 				25A155682C54C27D0034EAC4 /* GrizzcoHandbookWatchApp.swift in Sources */,
 				25A1557F2C54C3300034EAC4 /* WeaponView.swift in Sources */,
 				25A155812C54C3670034EAC4 /* StageFetch.swift in Sources */,
@@ -496,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbook/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
@@ -512,9 +540,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GrizzcoHandbook/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TD3JXVDW7;
 				ENABLE_PREVIEWS = YES;
@@ -544,9 +576,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,7 +606,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook.watchkitapp;
 				PRODUCT_NAME = "Grizzco Handbook";
 				SDKROOT = watchos;
@@ -599,7 +635,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.benlawrence.GrizzcoHandbook.watchkitapp;
 				PRODUCT_NAME = "Grizzco Handbook";
 				SDKROOT = watchos;
