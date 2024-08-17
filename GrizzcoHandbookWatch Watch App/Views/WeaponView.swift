@@ -23,6 +23,7 @@ struct WeaponView: View {
                             ProgressView()
                         }
                         Text(weapon.name)
+                            .bold()
                     }
                 }
             }

@@ -218,7 +218,6 @@
 		25BABCD52C6F62FB0029CD31 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
 				25A155802C54C3670034EAC4 /* StageFetch.swift */,
 				25BABCDB2C6F65FE0029CD31 /* UpcomingCountdown.swift */,
 			);
@@ -228,6 +227,7 @@
 		25BABCD62C6F630F0029CD31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
 				25A155692C54C27D0034EAC4 /* ContentView.swift */,
 				25A155792C54C2F10034EAC4 /* BossView.swift */,
 				25A1557C2C54C31F0034EAC4 /* TabView.swift */,

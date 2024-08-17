@@ -16,7 +16,7 @@ struct SalmonRunListView: View {
             List(upcomingSalmonRunSettings) { node in
                 SalmonRunRow(setting: node.setting, startTime: node.startTime, endTime: node.endTime, refreshTrigger: $refreshTrigger)
             }
-            .onChange(of: refreshTrigger) { _ in
+            .onChange(of: refreshTrigger) {
                 fetcher.fetchData()
             }
         }

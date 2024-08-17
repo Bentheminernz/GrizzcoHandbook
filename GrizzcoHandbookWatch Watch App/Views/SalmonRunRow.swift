@@ -52,41 +52,43 @@ struct SalmonRunRow: View {
 //                }
                 
                 Text(setting.coopStage.name)
-                    .font(.subheadline)
+                    .font(.caption2)
                     .lineLimit(1)
                     .fixedSize(horizontal: true, vertical: true)
                     .minimumScaleFactor(0.5)
                 
-//                HStack(spacing: 8) {
-//                    ForEach(setting.weapons, id: \.name) { weapon in
-//                        if let weaponURL = URL(string: weapon.image.url) {
-//                            ZStack {
-//                                AsyncImage(url: weaponURL) { image in
-//                                    image
-//                                        .resizable()
-//                                        .scaledToFit()
-//                                        .clipShape(Circle())
-//                                        .frame(width: 40, height: 40)
-//                               } placeholder: {
-//                                    Color.gray
-//                                        .frame(width: 40, height: 40)
-//                                        .clipShape(Circle())
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
+                HStack(spacing: 8) {
+                    ForEach(setting.weapons, id: \.name) { weapon in
+                        if let weaponURL = URL(string: weapon.image.url) {
+                            ZStack {
+                                AsyncImage(url: weaponURL) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .clipShape(Circle())
+                                        .frame(width: 25, height: 25)
+                               } placeholder: {
+                                    Color.gray
+                                        .frame(width: 25, height: 25)
+                                        .clipShape(Circle())
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+                    if let boss = setting.boss {
+                        bossImageView(for: boss)
+                            .frame(width: 30, height: 30)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .padding(.trailing)
+                    }
+                }
                 if let endDate = endDate {
                     UpcomingCountdown(targetDate: endDate, refreshTrigger: $refreshTrigger)
-                        .font(.caption)
+                        .font(.caption2)
+                        .lineLimit(1)
+                        .fixedSize(horizontal: true, vertical: true)
                 }
-            }
-            
-            Spacer()
-            if let boss = setting.boss {
-                bossImageView(for: boss)
-                    .frame(width: 30, height: 30)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
             }
         }
     }
@@ -150,7 +152,7 @@ struct SalmonRunRow: View {
 #if DEBUG
 #Preview {
     NavigationStack {
-        SalmonRunRow(setting: SalmonRunSetting.example, startTime: "2024-09-16T08:00:00Z", endTime: "2024-09-16T12:00:00Z", refreshTrigger: .constant(false))
+        SalmonRunRow(setting: SalmonRunSetting.example, startTime: "2024-08-18T08:00:00Z", endTime: "2024-08-19T12:00:00Z", refreshTrigger: .constant(false))
     }
 }
 #endif
