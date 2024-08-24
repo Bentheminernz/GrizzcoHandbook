@@ -13,6 +13,7 @@ struct StageView: View {
     @State private var countdown: String = ""
     @State private var showingPopup = false
     @State private var selectedWeapon: String?
+    @State private var selectedView = 0
 
     var body: some View {
         NavigationStack {

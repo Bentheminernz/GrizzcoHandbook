@@ -26,6 +26,8 @@ struct WeaponView: View {
                             .bold()
                     }
                 }
+            } else {
+                Text("An error has occured")
             }
         }
     }

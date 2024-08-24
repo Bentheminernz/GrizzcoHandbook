@@ -28,20 +28,10 @@ struct CountdownView: View {
 
     var body: some View {
         VStack {
-            if let _ = startTime, let _ = endTime {
-                Text("\(formattedStartTime) - \(formattedEndTime)")
-                    .font(.subheadline)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.5)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            
             Text(countdown)
-                .font(.largeTitle)
-                .background(Color.black.opacity(0.2))
-                .cornerRadius(10)
+                .font(.caption)
                 .foregroundColor(.white)
-                .padding()
+//                .padding()
                 .onAppear {
                     startCountdown()
                 }

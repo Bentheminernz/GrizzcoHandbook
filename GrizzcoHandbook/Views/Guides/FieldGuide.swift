@@ -10,17 +10,12 @@ import SwiftUI
 struct FieldGuide: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var searchText = ""
-    @State private var sponsorTest = false
     @State private var selectedSection: String? = nil
     private let lastVersionKey = "lastVersionKey"
     @State private var showWhatsNewSheet = false
     
     var items: [ItemSection] {
-        if sponsorTest {
-            return Bundle.main.decode([ItemSection].self, from: "FieldGuideSponsorTest.json")
-        } else {
-            return Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
-        }
+        return Bundle.main.decode([ItemSection].self, from: "FieldGuide.json")
     }
 
     var filteredItems: [ItemSection] {
@@ -60,12 +55,6 @@ struct FieldGuide: View {
                     }
                 }
                 .listRowBackground(Color.white.opacity(0.1))
-                #if DEBUG
-                Section("Debug Tools") {
-                    Toggle("Use Sponsor Test", isOn: $sponsorTest)
-                        .listRowBackground(Color.white.opacity(0.1))
-                }
-                #endif
             }
             .scrollContentBackground(.hidden)
             .background(BackgroundGradient(colorScheme: colorScheme).customBackground)

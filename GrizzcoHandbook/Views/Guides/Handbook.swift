@@ -10,16 +10,11 @@ import WhatsNewKit
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
-    @State private var sponsorTest = false
     @State private var searchText = ""
     @State private var selectedSection: String? = nil
 
     var items: [ItemSection] {
-        if sponsorTest {
-            return Bundle.main.decode([ItemSection].self, from: "handbookSponsorTest.json")
-        } else {
-            return Bundle.main.decode([ItemSection].self, from: "handbook.json")
-        }
+        return Bundle.main.decode([ItemSection].self, from: "handbook.json")
     }
 
     var filteredItems: [ItemSection] {
@@ -60,12 +55,6 @@ struct ContentView: View {
                         }
                     }
                     .listRowBackground(Color.white.opacity(0.1))
-                    #if DEBUG
-                    Section("Debug Tools") {
-                        Toggle("Use Sponsor Test", isOn: $sponsorTest)
-                            .listRowBackground(Color.white.opacity(0.1))
-                    }
-                    #endif
                 }
                 .scrollContentBackground(.hidden)
                 .background(BackgroundGradient(colorScheme: colorScheme).customBackground)

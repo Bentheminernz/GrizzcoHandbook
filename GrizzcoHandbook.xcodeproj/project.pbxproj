@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250515982C75D27400EC37B5 /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250515972C75D27400EC37B5 /* Guide.swift */; };
 		253168BC2C6618A600B65BC6 /* WhatsNewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */; };
-		254A30012C62188F0053A201 /* FieldGuideSponsorTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 254A2FFF2C62188F0053A201 /* FieldGuideSponsorTest.json */; };
-		254A30022C62188F0053A201 /* handbookSponsorTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 254A30002C62188F0053A201 /* handbookSponsorTest.json */; };
 		25A1552F2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1552E2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift */; };
 		25A155312C54BEAC0034EAC4 /* Handbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A155302C54BEAC0034EAC4 /* Handbook.swift */; };
 		25A155332C54BEAD0034EAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25A155322C54BEAD0034EAC4 /* Assets.xcassets */; };
@@ -69,9 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		250515972C75D27400EC37B5 /* Guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guide.swift; sourceTree = "<group>"; };
 		253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewSheet.swift; sourceTree = "<group>"; };
-		254A2FFF2C62188F0053A201 /* FieldGuideSponsorTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FieldGuideSponsorTest.json; sourceTree = "<group>"; };
-		254A30002C62188F0053A201 /* handbookSponsorTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = handbookSponsorTest.json; sourceTree = "<group>"; };
 		25A1552B2C54BEAC0034EAC4 /* GrizzcoHandbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizzcoHandbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A1552E2C54BEAC0034EAC4 /* GrizzcoHandbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzcoHandbookApp.swift; sourceTree = "<group>"; };
 		25A155302C54BEAC0034EAC4 /* Handbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handbook.swift; sourceTree = "<group>"; };
@@ -125,6 +123,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250515992C75DAA300EC37B5 /* Guides */ = {
+			isa = PBXGroup;
+			children = (
+				250515972C75D27400EC37B5 /* Guide.swift */,
+				25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */,
+				25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */,
+				25A155302C54BEAC0034EAC4 /* Handbook.swift */,
+				25A155532C54BFC90034EAC4 /* FieldGuide.swift */,
+			);
+			path = Guides;
+			sourceTree = "<group>";
+		};
+		2505159A2C75DABC00EC37B5 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */,
+				25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
 		25A155222C54BEAC0034EAC4 = {
 			isa = PBXGroup;
 			children = (
@@ -166,8 +185,7 @@
 		25A1553C2C54BECE0034EAC4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				254A2FFF2C62188F0053A201 /* FieldGuideSponsorTest.json */,
-				254A30002C62188F0053A201 /* handbookSponsorTest.json */,
+				253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */,
 				25A1553D2C54BEE40034EAC4 /* FieldGuide.json */,
 				25A1553F2C54BEFF0034EAC4 /* handbook.json */,
 				25A155412C54BF150034EAC4 /* StageFetch.swift */,
@@ -181,15 +199,10 @@
 		25A1554B2C54BF780034EAC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25A1555B2C54C0020034EAC4 /* SalmonRunRow.swift */,
-				25A1555D2C54C0110034EAC4 /* GrizzcoDetail.swift */,
-				25A1555F2C54C01C0034EAC4 /* GrizzcoRow.swift */,
-				25A155302C54BEAC0034EAC4 /* Handbook.swift */,
-				253168BB2C6618A600B65BC6 /* WhatsNewSheet.swift */,
+				250515992C75DAA300EC37B5 /* Guides */,
+				2505159A2C75DABC00EC37B5 /* Upcoming */,
 				25A1554C2C54BF810034EAC4 /* StageView.swift */,
 				25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */,
-				25A155532C54BFC90034EAC4 /* FieldGuide.swift */,
-				25A155552C54BFD80034EAC4 /* SalmonRunListView.swift */,
 				25A155572C54BFE80034EAC4 /* tabView.swift */,
 			);
 			path = Views;
@@ -218,6 +231,7 @@
 		25BABCD52C6F62FB0029CD31 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
 				25A155802C54C3670034EAC4 /* StageFetch.swift */,
 				25BABCDB2C6F65FE0029CD31 /* UpcomingCountdown.swift */,
 			);
@@ -227,7 +241,6 @@
 		25BABCD62C6F630F0029CD31 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				25A155772C54C2E50034EAC4 /* CountdownView.swift */,
 				25A155692C54C27D0034EAC4 /* ContentView.swift */,
 				25A155792C54C2F10034EAC4 /* BossView.swift */,
 				25A1557C2C54C31F0034EAC4 /* TabView.swift */,
@@ -329,9 +342,7 @@
 			files = (
 				25A1553E2C54BEE40034EAC4 /* FieldGuide.json in Resources */,
 				25A155362C54BEAD0034EAC4 /* Preview Assets.xcassets in Resources */,
-				254A30012C62188F0053A201 /* FieldGuideSponsorTest.json in Resources */,
 				25A155332C54BEAD0034EAC4 /* Assets.xcassets in Resources */,
-				254A30022C62188F0053A201 /* handbookSponsorTest.json in Resources */,
 				25A155402C54BEFF0034EAC4 /* handbook.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +367,7 @@
 				25A1554A2C54BF5C0034EAC4 /* Data.swift in Sources */,
 				25A155542C54BFC90034EAC4 /* FieldGuide.swift in Sources */,
 				25A1555E2C54C0110034EAC4 /* GrizzcoDetail.swift in Sources */,
+				250515982C75D27400EC37B5 /* Guide.swift in Sources */,
 				25A1554D2C54BF810034EAC4 /* StageView.swift in Sources */,
 				25A155482C54BF4D0034EAC4 /* CountdownView.swift in Sources */,
 				25A1555C2C54C0020034EAC4 /* SalmonRunRow.swift in Sources */,
