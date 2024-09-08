@@ -113,7 +113,7 @@ class StageFetcher: ObservableObject {
         guard let url = URL(string: "https://splatoon3.ink/data/schedules.json") else { return }
 
         var request = URLRequest(url: url)
-        let userAgent = "GrizzcoHandbook/1.0 (BenLawrence-benlawrencenz@icloud.com)"
+        let userAgent = "GrizzcoHandbook/1.2 (BenLawrence-benlawrencenz@icloud.com)"
         request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
 
         URLSession.shared.dataTask(with: request) { data, response, error in
