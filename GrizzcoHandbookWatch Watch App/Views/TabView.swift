@@ -11,7 +11,7 @@ struct MainTabView: View {
     var body: some View {
         TabView {
             ContentView()
-                background()
+                .containerBackground(Gradient(colors: [.orange, .black]), for: .tabView)
             WeaponView()
                 .containerBackground(Gradient(colors: [.orange, .black]), for: .tabView)
             BossView()

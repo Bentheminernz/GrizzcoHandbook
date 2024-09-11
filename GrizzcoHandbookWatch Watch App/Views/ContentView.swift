@@ -29,7 +29,7 @@ struct ContentView: View {
                                     image.resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: geometry.size.width * 0.9)
-                                        .cornerRadius(10)
+                                        .cornerRadius(15)
                                 } placeholder: {
                                     ProgressView()
                                 }
