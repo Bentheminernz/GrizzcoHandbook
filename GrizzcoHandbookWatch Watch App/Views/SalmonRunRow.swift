@@ -57,7 +57,7 @@ struct SalmonRunRow: View {
                     .fixedSize(horizontal: true, vertical: true)
                     .minimumScaleFactor(0.5)
                 
-                HStack(spacing: 8) {
+                HStack(spacing: 3) {
                     ForEach(setting.weapons, id: \.name) { weapon in
                         if let weaponURL = URL(string: weapon.image.url) {
                             ZStack {
@@ -66,7 +66,7 @@ struct SalmonRunRow: View {
                                         .resizable()
                                         .scaledToFit()
                                         .clipShape(Circle())
-                                        .frame(width: 25, height: 25)
+                                        .frame(width: 30, height: 30)
                                } placeholder: {
                                     Color.gray
                                         .frame(width: 25, height: 25)
