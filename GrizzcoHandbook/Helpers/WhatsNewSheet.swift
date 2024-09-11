@@ -16,34 +16,24 @@ struct WhatsNewSheet: View {
     func whatsNewSheet() -> WhatsNewView {
         let features = [
             WhatsNew.Feature(
-                image: .init(systemName: "graduationcap.fill"),
-                title: "New Field Guide Information",
-                subtitle: "New information about King Salmonids has been added!"
+                image: .init(systemName: "applewatch"),
+                title: "New Apple Watch App Features",
+                subtitle: "Explore the new refined design and see upcoming map rotations!"
             ),
             WhatsNew.Feature(
-                image: .init(systemName: "line.3.horizontal.decrease.circle"),
-                title: "Filter Items",
-                subtitle: "Filter items in the Employee Handbook and Field Guide by section!"
+                image: .init(systemName: "iphone.gen3"),
+                title: "Updated for iOS 18",
+                subtitle: "Grizzco Handbook now supports iOS 18 and its new features!"
             ),
             WhatsNew.Feature(
-                image: .init(systemName: "map.fill"),
-                title: "Map Rotation Additions",
-                subtitle: "Click on King Salmonid icons to see info about them!"
-            ),
-            WhatsNew.Feature(
-                image: .init(systemName: "info.bubble"),
-                title: "Weapon Names",
-                subtitle: "Click on weapon icons to see their names!"
-            ),
-            WhatsNew.Feature(
-                image: .init(systemName: "filemenu.and.selection"),
-                title: "Reordered Tab Bar",
-                subtitle: "Reorders Tab Bar so Field Guide is now the default tab!"
+                image: .init(systemName: "ladybug.circle"),
+                title: "Bug Fixes!",
+                subtitle: "Many bug fixes and improvements!"
             )
         ]
         
         let whatsNew = WhatsNew(
-            version: "1.1.0",
+            version: "1.2.0",
             title: "Welcome to Grizzco Handbook",
             features: features
         )

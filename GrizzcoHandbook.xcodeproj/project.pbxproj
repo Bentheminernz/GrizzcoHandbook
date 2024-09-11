@@ -144,6 +144,15 @@
 			path = Upcoming;
 			sourceTree = "<group>";
 		};
+		253505922C9165C2002D8715 /* StageViews */ = {
+			isa = PBXGroup;
+			children = (
+				25A1554C2C54BF810034EAC4 /* StageView.swift */,
+				25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */,
+			);
+			path = StageViews;
+			sourceTree = "<group>";
+		};
 		25A155222C54BEAC0034EAC4 = {
 			isa = PBXGroup;
 			children = (
@@ -199,10 +208,9 @@
 		25A1554B2C54BF780034EAC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				253505922C9165C2002D8715 /* StageViews */,
 				250515992C75DAA300EC37B5 /* Guides */,
 				2505159A2C75DABC00EC37B5 /* Upcoming */,
-				25A1554C2C54BF810034EAC4 /* StageView.swift */,
-				25A1554E2C54BF920034EAC4 /* EggstraWorkView.swift */,
 				25A155572C54BFE80034EAC4 /* tabView.swift */,
 			);
 			path = Views;
