@@ -85,19 +85,19 @@ struct Item: Identifiable, Codable, Hashable {
 
 struct BackgroundGradient {
     var colorScheme: ColorScheme
-
+    
     var customBackground: LinearGradient {
         return colorScheme == .dark
-            ? LinearGradient(gradient: Gradient(stops: [
-                Gradient.Stop(color: Color(hue: 0.096, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.115),
-                Gradient.Stop(color: Color(hue: 0.096, saturation: 0.699, brightness: 1.0, opacity: 1.0), location: 0.286),
-                Gradient.Stop(color: Color(hue: 0.15, saturation: 0.0, brightness: 0.0, opacity: 1.0), location: 1.0),
-                Gradient.Stop(color: Color(hue: 0.552, saturation: 1.0, brightness: 1.0, opacity: 0.0), location: 1.0)
-            ]), startPoint: .top, endPoint: .bottom)
-            : LinearGradient(gradient: Gradient(stops: [
-                Gradient.Stop(color: Color(hue: 0.097, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.0),
-                Gradient.Stop(color: Color(hue: 0.096, saturation: 0.496, brightness: 0.957, opacity: 1.0), location: 0.351),
-                Gradient.Stop(color: Color(hue: 0.097, saturation: 0.452, brightness: 1.0, opacity: 1.0), location: 1.0)
-            ]), startPoint: .top, endPoint: .bottom)
+        ? LinearGradient(gradient: Gradient(stops: [
+            Gradient.Stop(color: Color(hue: 0.096, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.115),
+            Gradient.Stop(color: Color(hue: 0.096, saturation: 0.699, brightness: 1.0, opacity: 1.0), location: 0.286),
+            Gradient.Stop(color: Color(hue: 0.15, saturation: 0.0, brightness: 0.0, opacity: 1.0), location: 1.0),
+            Gradient.Stop(color: Color(hue: 0.552, saturation: 1.0, brightness: 1.0, opacity: 0.0), location: 1.0)
+        ]), startPoint: .top, endPoint: .bottom)
+        : LinearGradient(gradient: Gradient(stops: [
+            Gradient.Stop(color: Color(hue: 0.097, saturation: 1.0, brightness: 1.0, opacity: 1.0), location: 0.0),
+            Gradient.Stop(color: Color(hue: 0.096, saturation: 0.496, brightness: 0.957, opacity: 1.0), location: 0.351),
+            Gradient.Stop(color: Color(hue: 0.097, saturation: 0.452, brightness: 1.0, opacity: 1.0), location: 1.0)
+        ]), startPoint: .top, endPoint: .bottom)
     }
 }

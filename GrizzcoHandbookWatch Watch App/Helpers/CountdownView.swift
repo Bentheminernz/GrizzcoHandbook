@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct CountdownView: View {
+    var startTime: String?
+    var endTime: String?
     @ObservedObject var stageFetcher = StageFetcher()
     @State private var countdown: String = ""
+    
+    private var formattedStartTime: String {
+        formatDateTime(startTime)
+    }
+    
+    private var formattedEndTime: String {
+        formatDateTime(endTime)
+    }
+    
+    private var endDate: Date? {
+        guard let endTime = endTime else { return nil }
+        return ISO8601DateFormatter().date(from: endTime)
+    }
 
     var body: some View {
         VStack {
             Text(countdown)
-                .font(.largeTitle)
-                .background(Color.black.opacity(0.2))
-                .cornerRadius(10)
+                .font(.caption)
                 .foregroundColor(.white)
-                .padding()
+//                .padding()
                 .onAppear {
                     startCountdown()
                 }
@@ -39,6 +52,22 @@ struct CountdownView: View {
                 }
             }
         }
+    }
+    
+    private func formatDateTime(_ dateTimeString: String?) -> String {
+        guard let dateTimeString = dateTimeString else { return "" }
+        
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ" // adjust according to your input format
+        
+        if let date = inputFormatter.date(from: dateTimeString) {
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = "dd-MM h:mm a" // output format
+            
+            return outputFormatter.string(from: date)
+        }
+        
+        return dateTimeString
     }
 }
 

@@ -13,6 +13,7 @@ struct StageView: View {
     @State private var countdown: String = ""
     @State private var showingPopup = false
     @State private var selectedWeapon: String?
+    @State private var selectedView = 0
 
     var body: some View {
         NavigationStack {
@@ -37,7 +38,6 @@ struct StageView: View {
                                     ProgressView()
                                 }
                                 .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * 0.3)
-                                .padding()
                             }
                             
                             Text("Weapon Rotation")
@@ -85,22 +85,18 @@ struct StageView: View {
                             .frame(height: 100)
 
                             if let boss = setting.boss {
-                                Text("Current Boss")
+                                Text(boss.name)
                                     .font(.title2)
                                     .padding(.top)
                                     .bold()
-
-                                Text(boss.name)
-                                    .font(.headline)
-                                    .padding(.bottom, 5)
 
                                 VStack {
                                     if boss.name == "Horrorboros" {
                                         NavigationLink(destination: GrizzcoDetail(item: Item.horrorborosInfo)) {
                                             Image("HorrorborosRotateIcon")
                                                 .resizable()
+                                                .frame(maxWidth: UIScreen.main.bounds.width * 0.32, maxHeight: UIScreen.main.bounds.height * 0.3)
                                                 .scaledToFit()
-                                                .frame(width: UIScreen.main.bounds.width * 0.3)
                                         }
                                     } else if boss.name == "Cohozuna" {
                                         NavigationLink(destination: GrizzcoDetail(item: Item.cohozunaInfo)) {

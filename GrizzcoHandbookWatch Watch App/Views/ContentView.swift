@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var stageFetcher = StageFetcher()
+    @State private var countdownText: String = ""
 
     var body: some View {
         VStack {
@@ -28,14 +29,15 @@ struct ContentView: View {
                                     image.resizable()
                                         .aspectRatio(contentMode: .fit)
                                         .frame(width: geometry.size.width * 0.9)
-                                        .cornerRadius(10)
+                                        .cornerRadius(15)
                                 } placeholder: {
                                     ProgressView()
                                 }
-                                Spacer() // Add Spacer after the image
+                                Spacer()
                             }
                         }
                     }
+                    CountdownView()
                 }
             } else {
                 Text("Loading...")
